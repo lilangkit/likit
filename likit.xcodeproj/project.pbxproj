@@ -12,6 +12,10 @@
 		FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */; };
 		FA55A4FA25B1E8AF00EC6CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F825B1E8AF00EC6CAB /* LaunchScreen.storyboard */; };
 		FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA55A4FC25B1E8AF00EC6CAB /* main.m */; };
+		FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */; };
+		FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */; };
+		FAD01C6525B1F9A100CD7FFB /* MLPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */; };
+		FAD01C6625B1F9A100CD7FFB /* MLPlayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,15 @@
 		FA55A4F925B1E8AF00EC6CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA55A4FB25B1E8AF00EC6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA55A4FC25B1E8AF00EC6CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAD01C5725B1F9A100CD7FFB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKControllerUtil.h; sourceTree = "<group>"; };
+		FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKBaseViewController.m; sourceTree = "<group>"; };
+		FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKControllerUtil.m; sourceTree = "<group>"; };
+		FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKBaseViewController.h; sourceTree = "<group>"; };
+		FAD01C5F25B1F9A100CD7FFB /* MLPlayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPlayHelper.h; sourceTree = "<group>"; };
+		FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPlayViewController.m; sourceTree = "<group>"; };
+		FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPlayHelper.m; sourceTree = "<group>"; };
+		FAD01C6225B1F9A100CD7FFB /* MLPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPlayViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +66,6 @@
 				93D514D5D9B1D2812660C7FF /* Pods-likit.debug.xcconfig */,
 				17E27E0BE5D471AE30A040AC /* Pods-likit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +90,8 @@
 		FA55A4E925B1E8AE00EC6CAB /* likit */ = {
 			isa = PBXGroup;
 			children = (
+				FAD01C5525B1F9A100CD7FFB /* base */,
+				FAD01C5D25B1F9A100CD7FFB /* business */,
 				FA55A4EA25B1E8AE00EC6CAB /* AppDelegate.h */,
 				FA55A4EB25B1E8AE00EC6CAB /* AppDelegate.m */,
 				FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */,
@@ -86,6 +100,53 @@
 				FA55A4FC25B1E8AF00EC6CAB /* main.m */,
 			);
 			path = likit;
+			sourceTree = "<group>";
+		};
+		FAD01C5525B1F9A100CD7FFB /* base */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5625B1F9A100CD7FFB /* config */,
+				FAD01C5825B1F9A100CD7FFB /* controller */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		FAD01C5625B1F9A100CD7FFB /* config */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5725B1F9A100CD7FFB /* PrefixHeader.pch */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		FAD01C5825B1F9A100CD7FFB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */,
+				FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */,
+				FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */,
+				FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FAD01C5D25B1F9A100CD7FFB /* business */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5E25B1F9A100CD7FFB /* entrance */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		FAD01C5E25B1F9A100CD7FFB /* entrance */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5F25B1F9A100CD7FFB /* MLPlayHelper.h */,
+				FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */,
+				FAD01C6225B1F9A100CD7FFB /* MLPlayViewController.h */,
+				FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */,
+			);
+			path = entrance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +245,10 @@
 			files = (
 				FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */,
 				FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */,
+				FAD01C6625B1F9A100CD7FFB /* MLPlayHelper.m in Sources */,
+				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
+				FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */,
+				FAD01C6525B1F9A100CD7FFB /* MLPlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B669K69ZN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/PrefixHeader.pch";
 				INFOPLIST_FILE = likit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,6 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B669K69ZN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/PrefixHeader.pch";
 				INFOPLIST_FILE = likit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

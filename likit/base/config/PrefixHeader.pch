@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  likit
+//
+//  Created by 李浪 on 2021/1/15.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifndef __OPTIMIZE__
+#define NSLog(format, ...)                NSLog((@"[文件名:%s]""[函数名:%s]""[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...) nil
+#endif
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "YYKit.h"
+#import "Masonry.h"
+
+#import "LKControllerUtil.h"
+
+#endif /* PrefixHeader_h */

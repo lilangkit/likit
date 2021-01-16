@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 
+#import "RootViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +17,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 设置控件的默认属性
+    [self configAppearance];
+    
+    //创建window
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    
+    // 初始化第三方SDK
+    
+    // 进入主界面
+    [self enterMainUI];
+    
     return YES;
+}
+
+/**
+ * 设置控件的默认属性
+ */
+- (void)configAppearance {
+    
+}
+
+/**
+ * 进入主界面
+ */
+- (void)enterMainUI {
+    _window.rootViewController = [[RootViewController alloc] init];
 }
 
 @end

@@ -12,10 +12,12 @@
 		FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */; };
 		FA55A4FA25B1E8AF00EC6CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F825B1E8AF00EC6CAB /* LaunchScreen.storyboard */; };
 		FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA55A4FC25B1E8AF00EC6CAB /* main.m */; };
+		FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCBC25B2776000057C6B /* RootViewController.m */; };
+		FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCC025B2781C00057C6B /* LKBaseTabBarController.m */; };
+		FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCC425B2786500057C6B /* LKBaseNavigationController.m */; };
+		FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCCA25B278C100057C6B /* LKHomeViewController.m */; };
 		FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */; };
 		FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */; };
-		FAD01C6525B1F9A100CD7FFB /* MLPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */; };
-		FAD01C6625B1F9A100CD7FFB /* MLPlayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,15 +31,19 @@
 		FA55A4F925B1E8AF00EC6CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA55A4FB25B1E8AF00EC6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA55A4FC25B1E8AF00EC6CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB3BCBB25B2776000057C6B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FAB3BCBC25B2776000057C6B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FAB3BCBF25B2781C00057C6B /* LKBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseTabBarController.h; sourceTree = "<group>"; };
+		FAB3BCC025B2781C00057C6B /* LKBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseTabBarController.m; sourceTree = "<group>"; };
+		FAB3BCC325B2786500057C6B /* LKBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseNavigationController.h; sourceTree = "<group>"; };
+		FAB3BCC425B2786500057C6B /* LKBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseNavigationController.m; sourceTree = "<group>"; };
+		FAB3BCC925B278C100057C6B /* LKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKHomeViewController.h; sourceTree = "<group>"; };
+		FAB3BCCA25B278C100057C6B /* LKHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKHomeViewController.m; sourceTree = "<group>"; };
 		FAD01C5725B1F9A100CD7FFB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKControllerUtil.h; sourceTree = "<group>"; };
 		FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKBaseViewController.m; sourceTree = "<group>"; };
 		FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKControllerUtil.m; sourceTree = "<group>"; };
 		FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKBaseViewController.h; sourceTree = "<group>"; };
-		FAD01C5F25B1F9A100CD7FFB /* MLPlayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPlayHelper.h; sourceTree = "<group>"; };
-		FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPlayViewController.m; sourceTree = "<group>"; };
-		FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPlayHelper.m; sourceTree = "<group>"; };
-		FAD01C6225B1F9A100CD7FFB /* MLPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPlayViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +98,41 @@
 			children = (
 				FAD01C5525B1F9A100CD7FFB /* base */,
 				FAD01C5D25B1F9A100CD7FFB /* business */,
+				FAB3BCD025B27BB100057C6B /* sdk */,
 				FA55A4EA25B1E8AE00EC6CAB /* AppDelegate.h */,
 				FA55A4EB25B1E8AE00EC6CAB /* AppDelegate.m */,
+				FAB3BCBB25B2776000057C6B /* RootViewController.h */,
+				FAB3BCBC25B2776000057C6B /* RootViewController.m */,
 				FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */,
 				FA55A4F825B1E8AF00EC6CAB /* LaunchScreen.storyboard */,
 				FA55A4FB25B1E8AF00EC6CAB /* Info.plist */,
 				FA55A4FC25B1E8AF00EC6CAB /* main.m */,
 			);
 			path = likit;
+			sourceTree = "<group>";
+		};
+		FAB3BCC725B2789A00057C6B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3BCC825B278A300057C6B /* controller */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FAB3BCC825B278A300057C6B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3BCC925B278C100057C6B /* LKHomeViewController.h */,
+				FAB3BCCA25B278C100057C6B /* LKHomeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FAB3BCD025B27BB100057C6B /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sdk;
 			sourceTree = "<group>";
 		};
 		FAD01C5525B1F9A100CD7FFB /* base */ = {
@@ -126,6 +159,10 @@
 				FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */,
 				FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */,
 				FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */,
+				FAB3BCBF25B2781C00057C6B /* LKBaseTabBarController.h */,
+				FAB3BCC025B2781C00057C6B /* LKBaseTabBarController.m */,
+				FAB3BCC325B2786500057C6B /* LKBaseNavigationController.h */,
+				FAB3BCC425B2786500057C6B /* LKBaseNavigationController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -133,20 +170,9 @@
 		FAD01C5D25B1F9A100CD7FFB /* business */ = {
 			isa = PBXGroup;
 			children = (
-				FAD01C5E25B1F9A100CD7FFB /* entrance */,
+				FAB3BCC725B2789A00057C6B /* home */,
 			);
 			path = business;
-			sourceTree = "<group>";
-		};
-		FAD01C5E25B1F9A100CD7FFB /* entrance */ = {
-			isa = PBXGroup;
-			children = (
-				FAD01C5F25B1F9A100CD7FFB /* MLPlayHelper.h */,
-				FAD01C6125B1F9A100CD7FFB /* MLPlayHelper.m */,
-				FAD01C6225B1F9A100CD7FFB /* MLPlayViewController.h */,
-				FAD01C6025B1F9A100CD7FFB /* MLPlayViewController.m */,
-			);
-			path = entrance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */,
+				FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */,
 				FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */,
-				FAD01C6625B1F9A100CD7FFB /* MLPlayHelper.m in Sources */,
 				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
+				FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */,
+				FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */,
+				FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */,
 				FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */,
-				FAD01C6525B1F9A100CD7FFB /* MLPlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

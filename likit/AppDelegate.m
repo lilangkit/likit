@@ -37,7 +37,18 @@
  * 设置控件的默认属性
  */
 - (void)configAppearance {
-    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:K_TAB_BAR_ITEM_FOREGROUND_COLOR_NORMAL,
+                                                       NSForegroundColorAttributeName,
+                                                       [UIFont systemFontOfSize:11.0],
+                                                       NSFontAttributeName,
+                                                       nil]
+                                             forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:K_TAB_BAR_ITEM_FOREGROUND_COLOR_SELECTED,
+                                                       NSForegroundColorAttributeName,
+                                                       [UIFont systemFontOfSize:11.0],
+                                                       NSFontAttributeName,
+                                                       nil]
+                                             forState:UIControlStateSelected];
 }
 
 /**

@@ -18,6 +18,8 @@
 		FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCCA25B278C100057C6B /* LKHomeViewController.m */; };
 		FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */; };
 		FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */; };
+		FAEAB76425B2E0A400891DFB /* LKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB76325B2E0A400891DFB /* LKMineViewController.m */; };
+		FAEAB76C25B2FEB800891DFB /* UIColor+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB76B25B2FEB800891DFB /* UIColor+LKAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +41,16 @@
 		FAB3BCC425B2786500057C6B /* LKBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseNavigationController.m; sourceTree = "<group>"; };
 		FAB3BCC925B278C100057C6B /* LKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKHomeViewController.h; sourceTree = "<group>"; };
 		FAB3BCCA25B278C100057C6B /* LKHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKHomeViewController.m; sourceTree = "<group>"; };
-		FAD01C5725B1F9A100CD7FFB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FAD01C5725B1F9A100CD7FFB /* LKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPrefixHeader.pch; sourceTree = "<group>"; };
 		FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKControllerUtil.h; sourceTree = "<group>"; };
 		FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKBaseViewController.m; sourceTree = "<group>"; };
 		FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKControllerUtil.m; sourceTree = "<group>"; };
 		FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKBaseViewController.h; sourceTree = "<group>"; };
+		FAEAB76225B2E0A400891DFB /* LKMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKMineViewController.h; sourceTree = "<group>"; };
+		FAEAB76325B2E0A400891DFB /* LKMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKMineViewController.m; sourceTree = "<group>"; };
+		FAEAB76625B2FC7A00891DFB /* LKColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKColorHeader.h; sourceTree = "<group>"; };
+		FAEAB76A25B2FEB800891DFB /* UIColor+LKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LKAdd.h"; sourceTree = "<group>"; };
+		FAEAB76B25B2FEB800891DFB /* UIColor+LKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LKAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,7 @@
 		FA55A4E925B1E8AE00EC6CAB /* likit */ = {
 			isa = PBXGroup;
 			children = (
+				FAEAB76825B2FE9C00891DFB /* util */,
 				FAD01C5525B1F9A100CD7FFB /* base */,
 				FAD01C5D25B1F9A100CD7FFB /* business */,
 				FAB3BCD025B27BB100057C6B /* sdk */,
@@ -147,7 +155,8 @@
 		FAD01C5625B1F9A100CD7FFB /* config */ = {
 			isa = PBXGroup;
 			children = (
-				FAD01C5725B1F9A100CD7FFB /* PrefixHeader.pch */,
+				FAD01C5725B1F9A100CD7FFB /* LKPrefixHeader.pch */,
+				FAEAB76625B2FC7A00891DFB /* LKColorHeader.h */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -155,8 +164,6 @@
 		FAD01C5825B1F9A100CD7FFB /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */,
-				FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */,
 				FAD01C5C25B1F9A100CD7FFB /* LKBaseViewController.h */,
 				FAD01C5A25B1F9A100CD7FFB /* LKBaseViewController.m */,
 				FAB3BCBF25B2781C00057C6B /* LKBaseTabBarController.h */,
@@ -170,9 +177,54 @@
 		FAD01C5D25B1F9A100CD7FFB /* business */ = {
 			isa = PBXGroup;
 			children = (
+				FAEAB76025B2E07F00891DFB /* mine */,
 				FAB3BCC725B2789A00057C6B /* home */,
 			);
 			path = business;
+			sourceTree = "<group>";
+		};
+		FAEAB76025B2E07F00891DFB /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAB76125B2E08900891DFB /* controller */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		FAEAB76125B2E08900891DFB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAB76225B2E0A400891DFB /* LKMineViewController.h */,
+				FAEAB76325B2E0A400891DFB /* LKMineViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FAEAB76825B2FE9C00891DFB /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAB77125B2FF3400891DFB /* controller */,
+				FAEAB76925B2FEA600891DFB /* color */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		FAEAB76925B2FEA600891DFB /* color */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAB76A25B2FEB800891DFB /* UIColor+LKAdd.h */,
+				FAEAB76B25B2FEB800891DFB /* UIColor+LKAdd.m */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		FAEAB77125B2FF3400891DFB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD01C5925B1F9A100CD7FFB /* LKControllerUtil.h */,
+				FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,12 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */,
+				FAEAB76C25B2FEB800891DFB /* UIColor+LKAdd.m in Sources */,
 				FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */,
 				FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */,
 				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
 				FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */,
 				FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */,
 				FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */,
+				FAEAB76425B2E0A400891DFB /* LKMineViewController.m in Sources */,
 				FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B669K69ZN;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/LKPrefixHeader.pch";
 				INFOPLIST_FILE = likit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,7 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B669K69ZN;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/likit/base/config/LKPrefixHeader.pch";
 				INFOPLIST_FILE = likit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

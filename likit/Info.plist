@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>likit</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -11,17 +13,64 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>likit</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>likit</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>likit</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CompanyName</key>
+	<string>li-kit</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>qqmap</string>
+		<string>baidumap</string>
+		<string>iosamap</string>
+		<string>alipay</string>
+		<string>alipayshare</string>
+		<string>alipaytlshare</string>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>用于设置日程安排</string>
+	<key>NSCameraUsageDescription</key>
+	<string>用于设置个人头像、证件扫描、人脸识别、附件录入</string>
+	<key>NSContactsUsageDescription</key>
+	<string>用于导入客户信息</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>用于导航时后台访问地理位置信息</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>用于获取周边服务、路径规划、导航</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>用于录音功能、实名认证</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>用于保存头像、资料</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>用于保存头像、资料</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -31,6 +80,9 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

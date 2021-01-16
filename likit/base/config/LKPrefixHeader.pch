@@ -21,6 +21,7 @@
 #import "Masonry.h"
 
 #import "LKControllerUtil.h"
+#import "LKDeviceUtil.h"
 
 #import "LKColorHeader.h"
 

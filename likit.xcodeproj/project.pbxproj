@@ -20,6 +20,7 @@
 		FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */; };
 		FAEAB76425B2E0A400891DFB /* LKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB76325B2E0A400891DFB /* LKMineViewController.m */; };
 		FAEAB76C25B2FEB800891DFB /* UIColor+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB76B25B2FEB800891DFB /* UIColor+LKAdd.m */; };
+		FAEAB77825B350D800891DFB /* LKDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEAB77725B350D800891DFB /* LKDeviceUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		FAEAB76625B2FC7A00891DFB /* LKColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKColorHeader.h; sourceTree = "<group>"; };
 		FAEAB76A25B2FEB800891DFB /* UIColor+LKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LKAdd.h"; sourceTree = "<group>"; };
 		FAEAB76B25B2FEB800891DFB /* UIColor+LKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LKAdd.m"; sourceTree = "<group>"; };
+		FAEAB77625B350D800891DFB /* LKDeviceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDeviceUtil.h; sourceTree = "<group>"; };
+		FAEAB77725B350D800891DFB /* LKDeviceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDeviceUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,7 @@
 		FAEAB76825B2FE9C00891DFB /* util */ = {
 			isa = PBXGroup;
 			children = (
+				FAEAB77525B350B600891DFB /* device */,
 				FAEAB77125B2FF3400891DFB /* controller */,
 				FAEAB76925B2FEA600891DFB /* color */,
 			);
@@ -225,6 +229,15 @@
 				FAD01C5B25B1F9A100CD7FFB /* LKControllerUtil.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		FAEAB77525B350B600891DFB /* device */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAB77625B350D800891DFB /* LKDeviceUtil.h */,
+				FAEAB77725B350D800891DFB /* LKDeviceUtil.m */,
+			);
+			path = device;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +344,7 @@
 				FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */,
 				FAEAB76425B2E0A400891DFB /* LKMineViewController.m in Sources */,
 				FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */,
+				FAEAB77825B350D800891DFB /* LKDeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

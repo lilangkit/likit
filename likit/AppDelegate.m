@@ -38,27 +38,6 @@
  */
 - (void)configAppearance {
     // 调整tabBarItem字体
-    if (@available(iOS 13.0, *)) {
-        
-    } else {
-        UITabBarItem *tabBarItem = [UITabBarItem appearance];
-        UIInterfaceOrientation interfaceOrientation = [LKDeviceUtil interfaceOrientation];
-        if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-            [tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
-        }
-        [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:K_TAB_BAR_ITEM_FOREGROUND_COLOR_NORMAL,
-                                            NSForegroundColorAttributeName,
-                                            [UIFont systemFontOfSize:11.0],
-                                            NSFontAttributeName,
-                                            nil]
-                                  forState:UIControlStateNormal];
-        [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:K_TAB_BAR_ITEM_FOREGROUND_COLOR_SELECTED,
-                                            NSForegroundColorAttributeName,
-                                            [UIFont systemFontOfSize:11.0],
-                                            NSFontAttributeName,
-                                            nil]
-                                  forState:UIControlStateSelected];
-    }
 }
 
 /**

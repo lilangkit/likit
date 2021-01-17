@@ -10,6 +10,8 @@
 
 #import "UIColor+LKAdd.h"
 
+#define K_SEPARATOR_COLOR                                UIColorFromRGB(0xF2F2F2)
+
 #define K_TAB_BAR_ITEM_FOREGROUND_COLOR_NORMAL           UIColorFromRGB(0x878787)
 #define K_TAB_BAR_ITEM_FOREGROUND_COLOR_SELECTED         UIColorFromRGB(0xFC5308)
 

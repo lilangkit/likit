@@ -55,7 +55,7 @@
         tabBarAppearance.stackedLayoutAppearance.selected.titleTextAttributes = titleTextAttributesSelected;
         // tabBar背景颜色
         tabBarAppearance.backgroundImage = [UIImage imageWithColor:[UIColor whiteColor]];
-        // tabBar分割线颜色
+        // tabBar分隔线颜色
         tabBarAppearance.shadowColor = K_SEPARATOR_COLOR;
         // 设置
         self.tabBar.standardAppearance = tabBarAppearance;
@@ -75,7 +75,7 @@
         }
         // 背景颜色
         self.tabBar.backgroundImage = [UIImage imageWithColor:[UIColor whiteColor]];
-        // 分割线颜色
+        // 分隔线颜色
         self.tabBar.shadowImage = [UIImage imageWithColor:K_SEPARATOR_COLOR];
     }
 }

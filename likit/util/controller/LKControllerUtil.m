@@ -90,7 +90,7 @@
     @autoreleasepool {
         UIViewController *topViewController = [self topViewController];
         if (topViewController) {
-            [topViewController presentViewController:topViewController animated:animated completion:completion];
+            [topViewController presentViewController:viewController animated:animated completion:completion];
         } else {
             UIViewController *presentedViewController = [self presentedViewController];
             if (presentedViewController) {

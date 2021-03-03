@@ -51,6 +51,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)layoutCustomSubviews;
 
 /**
+ * 加载数据
+ */
+- (void)loadData;
+
+/**
  * 账户状态变化
  */
 //- (void);

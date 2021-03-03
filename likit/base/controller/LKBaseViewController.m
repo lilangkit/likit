@@ -21,6 +21,8 @@
     [self addCustomSubViews];
     // 布局自定义视图
     [self layoutCustomSubviews];
+    // 加载数据
+    [self loadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -96,6 +98,13 @@
  */
 - (void)layoutCustomSubviews {
     // 布局统一视图
+}
+
+/**
+ * 加载数据
+ */
+- (void)loadData {
+    // 加载基础数据
 }
 
 /**

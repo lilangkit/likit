@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		208B4784F0DC5E7EA43A4EB0 /* libPods-likit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB9D9202F5DA96F8CDB9D15 /* libPods-likit.a */; };
 		BA4B8BE525EF923300ED2550 /* LKFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8BE425EF923300ED2550 /* LKFileUtil.m */; };
+		BA4B8BEB25EF9D6400ED2550 /* LKWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8BEA25EF9D6400ED2550 /* LKWebSocketManager.m */; };
 		BA9882C825EF841600CD8178 /* LKFileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9882C725EF841600CD8178 /* LKFileManageViewController.m */; };
 		FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA55A4EB25B1E8AE00EC6CAB /* AppDelegate.m */; };
 		FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 		93D514D5D9B1D2812660C7FF /* Pods-likit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-likit.debug.xcconfig"; path = "Target Support Files/Pods-likit/Pods-likit.debug.xcconfig"; sourceTree = "<group>"; };
 		BA4B8BE325EF923300ED2550 /* LKFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileUtil.h; sourceTree = "<group>"; };
 		BA4B8BE425EF923300ED2550 /* LKFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileUtil.m; sourceTree = "<group>"; };
+		BA4B8BE925EF9D6400ED2550 /* LKWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKWebSocketManager.h; sourceTree = "<group>"; };
+		BA4B8BEA25EF9D6400ED2550 /* LKWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKWebSocketManager.m; sourceTree = "<group>"; };
 		BA9882C625EF841600CD8178 /* LKFileManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileManageViewController.h; sourceTree = "<group>"; };
 		BA9882C725EF841600CD8178 /* LKFileManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileManageViewController.m; sourceTree = "<group>"; };
 		FA55A4E725B1E8AE00EC6CAB /* likit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = likit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,9 +103,19 @@
 			path = file;
 			sourceTree = "<group>";
 		};
+		BA4B8BE825EF9D4D00ED2550 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				BA4B8BE925EF9D6400ED2550 /* LKWebSocketManager.h */,
+				BA4B8BEA25EF9D6400ED2550 /* LKWebSocketManager.m */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
 		BA9882C325EF833C00CD8178 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				BA4B8BE825EF9D4D00ED2550 /* socket */,
 				BA9882CB25EF847400CD8178 /* file */,
 			);
 			path = tool;
@@ -372,6 +385,7 @@
 				FAEAB76C25B2FEB800891DFB /* UIColor+LKAdd.m in Sources */,
 				FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */,
 				FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */,
+				BA4B8BEB25EF9D6400ED2550 /* LKWebSocketManager.m in Sources */,
 				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
 				BA4B8BE525EF923300ED2550 /* LKFileUtil.m in Sources */,
 				FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */,

@@ -25,6 +25,7 @@ PODS:
   - SDWebImage (5.10.2):
     - SDWebImage/Core (= 5.10.2)
   - SDWebImage/Core (5.10.2)
+  - SocketRocket (0.5.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 6.5.6)
   - Masonry (~> 1.1.0)
   - SDWebImage (~> 5.10.2)
+  - SocketRocket (~> 0.5.1)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -44,6 +46,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - Masonry
     - SDWebImage
+    - SocketRocket
     - YYKit
 
 SPEC CHECKSUMS:
@@ -52,8 +55,9 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 5e561804e44084073cd04d880c288bef5c166958
+PODFILE CHECKSUM: fa98edb68342021cb41b044ef5580013528e7772
 
 COCOAPODS: 1.10.1

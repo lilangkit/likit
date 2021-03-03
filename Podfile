@@ -8,6 +8,7 @@ target 'likit' do
   pod 'SDWebImage', '~> 5.10.2'
   pod 'BoringSSL', '~> 10.0.6'
   pod 'IQKeyboardManager', '~> 6.5.6'
+  pod 'SocketRocket', '~> 0.5.1'
 end
 
 post_install do |installer|

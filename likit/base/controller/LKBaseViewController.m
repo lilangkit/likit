@@ -63,7 +63,7 @@
  * 创建线程队列
  */
 - (dispatch_group_t)dispatchGroup {
-    if (!_dispatchGroup) {
+    if (_dispatchGroup == nil) {
         _dispatchGroup = dispatch_group_create();
     }
     return _dispatchGroup;

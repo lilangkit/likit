@@ -10,6 +10,11 @@
 		208B4784F0DC5E7EA43A4EB0 /* libPods-likit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB9D9202F5DA96F8CDB9D15 /* libPods-likit.a */; };
 		BA4B8BE525EF923300ED2550 /* LKFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8BE425EF923300ED2550 /* LKFileUtil.m */; };
 		BA4B8BEB25EF9D6400ED2550 /* LKWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B8BEA25EF9D6400ED2550 /* LKWebSocketManager.m */; };
+		BA805B5D25F07D860081243F /* LKFileManageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA805B5C25F07D860081243F /* LKFileManageHelper.m */; };
+		BA805B6225F07F760081243F /* LKFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA805B6125F07F760081243F /* LKFileModel.m */; };
+		BA805B6625F0ECA90081243F /* LKFileManageFileIcon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA805B6525F0ECA90081243F /* LKFileManageFileIcon.bundle */; };
+		BA805B6B25F0ED2D0081243F /* LKFileBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA805B6A25F0ED2D0081243F /* LKFileBaseTableViewCell.m */; };
+		BA805B7025F0ED3F0081243F /* LKFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA805B6F25F0ED3F0081243F /* LKFileTableViewCell.m */; };
 		BA9882C825EF841600CD8178 /* LKFileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9882C725EF841600CD8178 /* LKFileManageViewController.m */; };
 		FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA55A4EB25B1E8AE00EC6CAB /* AppDelegate.m */; };
 		FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */; };
@@ -34,6 +39,15 @@
 		BA4B8BE425EF923300ED2550 /* LKFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileUtil.m; sourceTree = "<group>"; };
 		BA4B8BE925EF9D6400ED2550 /* LKWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKWebSocketManager.h; sourceTree = "<group>"; };
 		BA4B8BEA25EF9D6400ED2550 /* LKWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKWebSocketManager.m; sourceTree = "<group>"; };
+		BA805B5B25F07D860081243F /* LKFileManageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileManageHelper.h; sourceTree = "<group>"; };
+		BA805B5C25F07D860081243F /* LKFileManageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileManageHelper.m; sourceTree = "<group>"; };
+		BA805B6025F07F760081243F /* LKFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileModel.h; sourceTree = "<group>"; };
+		BA805B6125F07F760081243F /* LKFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileModel.m; sourceTree = "<group>"; };
+		BA805B6525F0ECA90081243F /* LKFileManageFileIcon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LKFileManageFileIcon.bundle; sourceTree = "<group>"; };
+		BA805B6925F0ED2D0081243F /* LKFileBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileBaseTableViewCell.h; sourceTree = "<group>"; };
+		BA805B6A25F0ED2D0081243F /* LKFileBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileBaseTableViewCell.m; sourceTree = "<group>"; };
+		BA805B6E25F0ED3F0081243F /* LKFileTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileTableViewCell.h; sourceTree = "<group>"; };
+		BA805B6F25F0ED3F0081243F /* LKFileTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileTableViewCell.m; sourceTree = "<group>"; };
 		BA9882C625EF841600CD8178 /* LKFileManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFileManageViewController.h; sourceTree = "<group>"; };
 		BA9882C725EF841600CD8178 /* LKFileManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFileManageViewController.m; sourceTree = "<group>"; };
 		FA55A4E725B1E8AE00EC6CAB /* likit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = likit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +126,34 @@
 			path = socket;
 			sourceTree = "<group>";
 		};
+		BA805B5F25F07F620081243F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BA805B6025F07F760081243F /* LKFileModel.h */,
+				BA805B6125F07F760081243F /* LKFileModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA805B6425F0EC910081243F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA805B6525F0ECA90081243F /* LKFileManageFileIcon.bundle */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		BA805B6825F0ECFB0081243F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA805B6925F0ED2D0081243F /* LKFileBaseTableViewCell.h */,
+				BA805B6A25F0ED2D0081243F /* LKFileBaseTableViewCell.m */,
+				BA805B6E25F0ED3F0081243F /* LKFileTableViewCell.h */,
+				BA805B6F25F0ED3F0081243F /* LKFileTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		BA9882C325EF833C00CD8178 /* tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +175,12 @@
 		BA9882CB25EF847400CD8178 /* file */ = {
 			isa = PBXGroup;
 			children = (
+				BA805B5B25F07D860081243F /* LKFileManageHelper.h */,
+				BA805B5C25F07D860081243F /* LKFileManageHelper.m */,
 				BA9882C425EF836A00CD8178 /* controller */,
+				BA805B5F25F07F620081243F /* model */,
+				BA805B6825F0ECFB0081243F /* view */,
+				BA805B6425F0EC910081243F /* resources */,
 			);
 			path = file;
 			sourceTree = "<group>";
@@ -346,6 +393,7 @@
 			files = (
 				FA55A4FA25B1E8AF00EC6CAB /* LaunchScreen.storyboard in Resources */,
 				FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */,
+				BA805B6625F0ECA90081243F /* LKFileManageFileIcon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA805B6225F07F760081243F /* LKFileModel.m in Sources */,
 				FA55A4EC25B1E8AE00EC6CAB /* AppDelegate.m in Sources */,
 				FAEAB76C25B2FEB800891DFB /* UIColor+LKAdd.m in Sources */,
 				FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */,
@@ -388,13 +437,16 @@
 				BA4B8BEB25EF9D6400ED2550 /* LKWebSocketManager.m in Sources */,
 				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
 				BA4B8BE525EF923300ED2550 /* LKFileUtil.m in Sources */,
+				BA805B5D25F07D860081243F /* LKFileManageHelper.m in Sources */,
 				FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */,
 				FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */,
 				FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */,
 				FAEAB76425B2E0A400891DFB /* LKMineViewController.m in Sources */,
 				FAD01C6325B1F9A100CD7FFB /* LKBaseViewController.m in Sources */,
+				BA805B7025F0ED3F0081243F /* LKFileTableViewCell.m in Sources */,
 				BA9882C825EF841600CD8178 /* LKFileManageViewController.m in Sources */,
 				FAEAB77825B350D800891DFB /* LKDeviceUtil.m in Sources */,
+				BA805B6B25F0ED2D0081243F /* LKFileBaseTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

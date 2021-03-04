@@ -19,7 +19,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     // 导航栏分隔线
-    if (!_hairlineImageView) {
+    if (_hairlineImageView == nil) {
         _hairlineImageView = [self findHairlineImageViewUnder:self.navigationBar];
         _hairlineImageViewNew = [UIView new];
         _hairlineImageViewNew.backgroundColor = K_SEPARATOR_COLOR;

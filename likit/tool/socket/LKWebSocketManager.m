@@ -47,7 +47,7 @@
  * 建立长连接
  */
 - (void)connectServer {
-    if (!_urlString) {
+    if (_urlString == nil || _urlString.length == 0) {
         return;
     }
     _isActivelyClose = NO;

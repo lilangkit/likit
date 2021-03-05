@@ -177,7 +177,11 @@
         // 文件名
         fileModel.fileName = [filePath lastPathComponent];
         // 文件大小
+        fileModel.fileLength = [LKFileUtil getFileLengthWithFilPath:path];
+        // 文件大小
         fileModel.fileSize = [LKFileUtil getFileSizeWithFilPath:path];
+        // 文件创建时间
+        fileModel.fileCreateTime = [LKFileUtil getFileCreateTimeWithFilePath:path];
         // 文件简介
         fileModel.fileAbout = [self getFileInfoWithFilePath:path];
         // 文件图片

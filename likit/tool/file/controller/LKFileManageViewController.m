@@ -23,6 +23,8 @@
 @property(nonatomic, copy) NSString *currentDirectoryPath;
 // 上翻按钮
 @property(nonatomic, strong) UIBarButtonItem *beforeBarButtonItem;
+// 刷新按钮
+@property(nonatomic, strong) UIBarButtonItem *refreshBarButtonItem;
 
 @end
 
@@ -52,7 +54,13 @@
         self.beforeBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"上一级" style:UIBarButtonItemStylePlain target:self action:@selector(beforeHandle)];
         [leftBarButtonItems addObject:self.beforeBarButtonItem];
         
+        NSMutableArray *rightBarButtonItems = [NSMutableArray arrayWithArray:self.navigationItem.rightBarButtonItems];
+        // 刷新按钮
+        self.refreshBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"刷新" style:UIBarButtonItemStylePlain target:self action:@selector(refreshHandle)];
+        [rightBarButtonItems insertObject:self.refreshBarButtonItem atIndex:0];
+        
         self.navigationItem.leftBarButtonItems = leftBarButtonItems;
+        self.navigationItem.rightBarButtonItems = rightBarButtonItems;
     }
 }
 
@@ -149,6 +157,13 @@
         path = [self.currentDirectoryPath stringByDeletingLastPathComponent];
     }
     [self updateDataSourceWithDirectoryPath:path];
+}
+
+/**
+ * 刷新
+ */
+- (void)refreshHandle {
+    [self updateDataSourceWithDirectoryPath:self.currentDirectoryPath];
 }
 
 /**

@@ -39,11 +39,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LKFileModel : NSObject
 
-
 // 文件名
 @property(nonatomic, copy) NSString *fileName;
 // 文件大小
+@property(nonatomic, assign) NSUInteger fileLength;
+// 文件大小
 @property(nonatomic, copy) NSString *fileSize;
+// 文件创建时间
+@property(nonatomic, strong) NSDate *fileCreateTime;
 // 文件简介
 @property(nonatomic, copy) NSString *fileAbout;
 // 文件图片

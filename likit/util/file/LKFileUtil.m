@@ -222,6 +222,21 @@
 }
 
 /**
+ * 获取文件创建时间
+ *
+ * @param filePath 文件路径
+ * @return 文件信息
+ */
++ (NSDate *)getFileCreateTimeWithFilePath:(NSString *)filePath {
+    NSDictionary *info = [self getFileInfoFromFilePath:filePath];
+    if (info == nil) {
+        return nil;
+    }
+    NSDate *createTime = info[@"NSFileCreationDate"];
+    return createTime;
+}
+
+/**
  * 获取文件信息
  *
  * @param filePath 文件路径
@@ -247,24 +262,37 @@
  * @param filePath 文件路径
  * @return 文件大小
  */
++ (NSInteger)getFileLengthWithFilPath:(NSString *)filePath {
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    NSInteger fileLength = data.length;
+    return fileLength;
+}
+
+/**
+ * 获取文件大小
+ *
+ * @param filePath 文件路径
+ * @return 文件大小
+ */
 + (NSString *)getFileSizeWithFilPath:(NSString *)filePath {
     NSData *data = [NSData dataWithContentsOfFile:filePath];
+    NSInteger fileLength = data.length;
     NSString *fileSize;
     CGFloat size;
-    if (data.length < 1024) {
-        size = data.length;
+    if (fileLength < 1024) {
+        size = fileLength;
         fileSize = [NSString stringWithFormat:@"%.1fB", size];
-    } else if ((data.length / 1024) < 1024) {
-        size = ((CGFloat)data.length) / 1024.0;
+    } else if ((fileLength / 1024) < 1024) {
+        size = ((CGFloat)fileLength) / 1024.0;
         fileSize = [NSString stringWithFormat:@"%.1fKB", size];
-    } else if (((data.length / 1024) / 1024) < 1024) {
-        size = (((CGFloat)data.length) / 1024.0) / 1024.0;
+    } else if (((fileLength / 1024) / 1024) < 1024) {
+        size = (((CGFloat)fileLength) / 1024.0) / 1024.0;
         fileSize = [NSString stringWithFormat:@"%.1fMB", size];
-    } else if ((((data.length / 1024) / 1024) / 1024) < 1024) {
-        size = ((((CGFloat )data.length) / 1024.0) / 1024.0) / 1024.0;
+    } else if ((((fileLength / 1024) / 1024) / 1024) < 1024) {
+        size = ((((CGFloat )fileLength) / 1024.0) / 1024.0) / 1024.0;
         fileSize = [NSString stringWithFormat:@"%.1fGB", size];
     } else {
-        fileSize = [NSString stringWithFormat:@"%.1ld", (unsigned long)data.length];
+        fileSize = [NSString stringWithFormat:@"%.1ld", (unsigned long)fileLength];
     }
     return fileSize;
 }

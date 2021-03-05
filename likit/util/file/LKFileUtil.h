@@ -130,12 +130,28 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)createFileAtPath:(NSString *)filePath contents:(NSData *)data;
 
 /**
+ * 获取文件创建时间
+ *
+ * @param filePath 文件路径
+ * @return 文件信息
+ */
++ (NSDate *)getFileCreateTimeWithFilePath:(NSString *)filePath;
+
+/**
  * 获取文件信息
  *
  * @param filePath 文件路径
  * @return 文件信息
  */
 + (NSDictionary *)getFileInfoFromFilePath:(NSString *)filePath;
+
+/**
+ * 获取文件大小
+ *
+ * @param filePath 文件路径
+ * @return 文件大小
+ */
++ (NSInteger)getFileLengthWithFilPath:(NSString *)filePath;
 
 /**
  * 获取文件大小

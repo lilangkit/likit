@@ -129,9 +129,13 @@
         if (info == nil) {
             return nil;
         }
-        NSString *createTime = info[@"NSFileCreationDate"];
+        NSDate *createTime = info[@"NSFileCreationDate"];
+        NSString *createTimeString = nil;
+        if (createTime != nil) {
+            createTimeString = [createTime stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
+        }
         NSString *size = [LKFileUtil getFileSizeWithFilPath:filePath];
-        NSString *fileInfo = [NSString stringWithFormat:@"%@    %@", createTime, size];
+        NSString *fileInfo = [NSString stringWithFormat:@"%@    %@", createTimeString, size];
         return fileInfo;
     }
 }
@@ -190,11 +194,11 @@
         }
         // 文件地址类型
         if ([path hasPrefix:[LKFileUtil getHomeFilePath]]) {
-            fileModel.fileType = LKFilePathTypeSandBox;
+            fileModel.filePathType = LKFilePathTypeSandBox;
         } else if ([path hasPrefix:[LKFileUtil getMainBundlePath]]) {
-            fileModel.fileType = LKFilePathTypeBundle;
+            fileModel.filePathType = LKFilePathTypeBundle;
         } else {
-            fileModel.fileType = LKFilePathTypeOther;
+            fileModel.filePathType = LKFilePathTypeOther;
         }
         
         [fileModels addObject:fileModel];

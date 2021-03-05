@@ -22,6 +22,7 @@ PODS:
   - BoringSSL/Interface (10.0.6)
   - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
+  - MJRefresh (3.5.0)
   - SDWebImage (5.10.2):
     - SDWebImage/Core (= 5.10.2)
   - SDWebImage/Core (5.10.2)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - BoringSSL (~> 10.0.6)
   - IQKeyboardManager (~> 6.5.6)
   - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.5.0)
   - SDWebImage (~> 5.10.2)
   - SocketRocket (~> 0.5.1)
   - YYKit (~> 1.0.9)
@@ -45,6 +47,7 @@ SPEC REPOS:
     - BoringSSL
     - IQKeyboardManager
     - Masonry
+    - MJRefresh
     - SDWebImage
     - SocketRocket
     - YYKit
@@ -54,10 +57,11 @@ SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: fa98edb68342021cb41b044ef5580013528e7772
+PODFILE CHECKSUM: 5b74e2ea6a1fc54cbd02b138479606cda43aa31a
 
 COCOAPODS: 1.10.1

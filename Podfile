@@ -9,6 +9,7 @@ target 'likit' do
   pod 'BoringSSL', '~> 10.0.6'
   pod 'IQKeyboardManager', '~> 6.5.6'
   pod 'SocketRocket', '~> 0.5.1'
+  pod 'MJRefresh', '~> 3.5.0'
 end
 
 post_install do |installer|

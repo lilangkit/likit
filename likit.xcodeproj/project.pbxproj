@@ -345,6 +345,7 @@
 				FA55A4E325B1E8AE00EC6CAB /* Sources */,
 				FA55A4E425B1E8AE00EC6CAB /* Frameworks */,
 				FA55A4E525B1E8AE00EC6CAB /* Resources */,
+				A48372A73A8849E42191A67E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +401,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A48372A73A8849E42191A67E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-likit/Pods-likit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-likit/Pods-likit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-likit/Pods-likit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D5A19D64710445F1A09BCD2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

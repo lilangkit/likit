@@ -7,6 +7,7 @@
 
 #import "LKFileManageViewController.h"
 #import "LKFileTableViewCell.h"
+#import "MJRefreshNormalHeader.h"
 
 #import "LKFileManageHelper.h"
 #import "LKFileUtil.h"
@@ -17,6 +18,8 @@
 
 // 列表
 @property(nonatomic, strong) UITableView *tableView;
+// 列表
+@property(nonatomic, strong) UICollectionView *collectionView;
 // 数据源
 @property(nonatomic, strong) NSMutableArray *dataSource;
 // 当前目录
@@ -116,6 +119,12 @@
         _tableView.dataSource = self;
         
         [_tableView registerClass:[LKFileTableViewCell class] forCellReuseIdentifier:LKFileTableViewCell.className];
+        
+        // 下拉刷新
+        MJRefreshNormalHeader *mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHandle)];
+        mj_header.stateLabel.hidden = YES;
+        mj_header.lastUpdatedTimeLabel.hidden = YES;
+        self.tableView.mj_header = mj_header;
     }
     return _tableView;
 }
@@ -172,6 +181,7 @@
  */
 - (void)refreshHandle {
     [self updateDataSourceWithDirectoryPath:self.currentDirectoryPath];
+    [self.tableView.mj_header endRefreshing];
 }
 
 /**

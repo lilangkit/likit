@@ -30,6 +30,14 @@
 
 @implementation LKFileManageViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.fileManageViewType = LKFileManageViewTypeTable;
+    }
+    return self;
+}
+
 /**
  * 初始化
  */

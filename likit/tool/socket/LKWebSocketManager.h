@@ -19,6 +19,8 @@ typedef NS_ENUM(NSUInteger, LKWebSocketConnectType) {
 
 @protocol LKWebSocketManagerDelegate <NSObject>
 
+@optional
+
 - (void)webSocketManagerDidReceiveMessage:(id _Nullable)message;
 
 @end

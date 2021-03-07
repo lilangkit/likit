@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		FA55A4F725B1E8AF00EC6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F625B1E8AF00EC6CAB /* Assets.xcassets */; };
 		FA55A4FA25B1E8AF00EC6CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA55A4F825B1E8AF00EC6CAB /* LaunchScreen.storyboard */; };
 		FA55A4FD25B1E8AF00EC6CAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA55A4FC25B1E8AF00EC6CAB /* main.m */; };
+		FA947D6725F366EF00B854F1 /* LKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA947D6625F366EF00B854F1 /* LKWebView.m */; };
 		FAB3BCBD25B2776000057C6B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCBC25B2776000057C6B /* RootViewController.m */; };
 		FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCC025B2781C00057C6B /* LKBaseTabBarController.m */; };
 		FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3BCC425B2786500057C6B /* LKBaseNavigationController.m */; };
@@ -57,6 +58,8 @@
 		FA55A4F925B1E8AF00EC6CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA55A4FB25B1E8AF00EC6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA55A4FC25B1E8AF00EC6CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA947D6525F366EF00B854F1 /* LKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKWebView.h; sourceTree = "<group>"; };
+		FA947D6625F366EF00B854F1 /* LKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKWebView.m; sourceTree = "<group>"; };
 		FAB3BCBB25B2776000057C6B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FAB3BCBC25B2776000057C6B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FAB3BCBF25B2781C00057C6B /* LKBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseTabBarController.h; sourceTree = "<group>"; };
@@ -157,6 +160,7 @@
 		BA9882C325EF833C00CD8178 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				FA947D6325F3642800B854F1 /* browser */,
 				BA4B8BE825EF9D4D00ED2550 /* socket */,
 				BA9882CB25EF847400CD8178 /* file */,
 			);
@@ -220,6 +224,23 @@
 				FA55A4FC25B1E8AF00EC6CAB /* main.m */,
 			);
 			path = likit;
+			sourceTree = "<group>";
+		};
+		FA947D6325F3642800B854F1 /* browser */ = {
+			isa = PBXGroup;
+			children = (
+				FA947D6425F3644000B854F1 /* view */,
+			);
+			path = browser;
+			sourceTree = "<group>";
+		};
+		FA947D6425F3644000B854F1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA947D6525F366EF00B854F1 /* LKWebView.h */,
+				FA947D6625F366EF00B854F1 /* LKWebView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		FAB3BCC725B2789A00057C6B /* home */ = {
@@ -362,7 +383,7 @@
 		FA55A4DF25B1E8AE00EC6CAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					FA55A4E625B1E8AE00EC6CAB = {
 						CreatedOnToolsVersion = 12.2;
@@ -456,6 +477,7 @@
 				FAD01C6425B1F9A100CD7FFB /* LKControllerUtil.m in Sources */,
 				BA4B8BE525EF923300ED2550 /* LKFileUtil.m in Sources */,
 				BA805B5D25F07D860081243F /* LKFileManageHelper.m in Sources */,
+				FA947D6725F366EF00B854F1 /* LKWebView.m in Sources */,
 				FAB3BCC125B2781C00057C6B /* LKBaseTabBarController.m in Sources */,
 				FAB3BCCB25B278C100057C6B /* LKHomeViewController.m in Sources */,
 				FAB3BCC525B2786500057C6B /* LKBaseNavigationController.m in Sources */,
